@@ -1,0 +1,47 @@
+# WARNING: Make your GitHub repo Private if you are using this as it is
+# Example .gitignore file for your config dir.
+# An * ensures that everything will be ignored.
+*
+# You can whitelist files/folders with !, these will not be ignored.
+!*.yaml
+!.gitignore
+!*.md
+!*.sh
+!*.js*
+
+# Include folders
+!automation/*
+!binary_sensors/*
+!blueprints/*
+!camera/*
+!custom_components/*
+!deps/*
+!device_tracker/*
+!esphome/*
+!image/*
+!image_processing/*
+!input_boolean/*
+!input_datetime/*
+!input_number/*
+!input_select/*
+!input_text/*
+!light/*
+!lovelace/*
+!notify/*
+!scenes/*
+!scripts/*
+!sensors/*
+!switch/*
+!themes/*
+!tts/*
+!weather/*
+!www/*
+
+# Uncomment this if you don' want to include secrets.yaml 
+secrets.yaml
+
+# Ignore these files/folders
+.storage
+.cloud
+.google.token 
+home-assistant.log

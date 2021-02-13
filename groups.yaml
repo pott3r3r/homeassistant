@@ -1,0 +1,20 @@
+Upstairs_lights:
+  name: Light 1st floor
+  entities:
+    - light.lightbulb1
+    - light.lightbulb2
+    - light.tradfri_bulb_3
+Fibaro_motion:
+  name: Motion sensors
+  entities:
+    - sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_burglar
+    - sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_burglar_2
+    - sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_burglar_3
+    - sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_burglar_4
+    - sensor.tradfri_motion_sensor
+internet_speed_group:
+  name: Internet Speed
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_ping
+    - sensor.speedtest_upload

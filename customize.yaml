@@ -1,0 +1,146 @@
+light.hall:
+  icon: mdi:led-strip
+switch.hall_downstairs_switch:
+  icon: mdi:power-socket-uk
+device_tracker.person2_mobile_gps:
+  friendly_name: person2 Mobile
+device_tracker.car_gps:
+  friendly_name: Car
+person.mr_je:
+  entity_picture: /local/je.png
+light.living_room_table:
+  friendly_name: Living room table light
+binary_sensor.first_floor_front:
+  device_class: connectivity
+binary_sensor.first_floor_rear:
+  device_class: connectivity
+zone.lightning: {}
+sensor.dark_sky_pressure: {}
+media_player.apple_tv:
+  entity_picture: /local/appletv.png
+media_player.samsung_ue55ks8005:
+  entity_picture: /local/samsunglarge.png
+media_player.samsung_small_tv:
+  entity_picture: /local/samsungsmall.jpg
+media_player.yamaha_receiver:
+  entity_picture: /local/yamaha.png
+remote.apple_tv:
+  entity_picture: /local/appletvremote.png
+switch.rislampa:
+  icon: mdi:lightbulb
+switch.slave_shenzhen_neo_electronics_co_ltd_power_plug_12a_switch:
+  friendly_name: white floorlamp
+  icon: mdi:lightbulb
+switch.slave_shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_3:
+  friendly_name: black floorlamp
+  icon: mdi:lightbulb
+switch.tripod:
+  icon: mdi:lightbulb
+switch.jordglob:
+  icon: mdi:earth
+switch.utebelysning:
+  icon: mdi:outdoor-lamp
+sensor.slave_washing_machine_status:
+  icon: mdi:washing-machine
+sensor.epson_ink_level_y:
+  friendly_name: Yellow
+  entity_picture: /local/epson/Y.png   
+sensor.epson_ink_level_lm:
+  friendly_name: Light Magenta
+  entity_picture: /local/epson/LM.png  
+sensor.epson_ink_level_lc:
+  friendly_name: Light Cyan
+  entity_picture: /local/epson/LC.png  
+sensor.epson_ink_level_m:
+  friendly_name: Magenta
+  entity_picture: /local/epson/M.png  
+sensor.epson_ink_level_c:
+  friendly_name: Cyan
+  entity_picture: /local/epson/C.png  
+sensor.epson_ink_level_llk:
+  friendly_name: Light Light Gray
+  entity_picture: /local/epson/LLK.png
+sensor.epson_ink_level_lk:
+  friendly_name: Light Gray
+  entity_picture: /local/epson/LK.png
+sensor.epson_ink_level_k:
+ friendly_name: Black
+ entity_picture: /local/epson/K.png
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_burglar:
+  friendly_name: "Livingroom Motion"
+  icon: mdi:security
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_luminance:
+  friendly_name: "Livingroom Luminance"
+  icon: mdi:brightness-7
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature:
+  friendly_name: "Livingroom Temperature"
+  icon: mdi:thermometer
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_seismic_intensity:
+  friendly_name: "Livingroom Seismic"
+  icon: mdi:thermometer
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_burglar_2:
+  friendly_name: "Kitchen Motion"
+  icon: mdi:security
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_luminance_2:
+  friendly_name: "Kitchen Luminance"
+  icon: mdi:brightness-7
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature_2:
+  friendly_name: "Kitchen Temperature"
+  icon: mdi:thermometer
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_seismic_intensity_2:
+  friendly_name: "Kitchen Seismic"
+  icon: mdi:thermometer
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_burglar_3:
+  friendly_name: "Master Bedroom Motion"
+  icon: mdi:security
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_luminance_3:
+  friendly_name: "Master Bedroom Luminance"
+  icon: mdi:brightness-7
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature_3:
+  friendly_name: "Master Bedroom Temperature"
+  icon: mdi:thermometer
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_seismic_intensity_3:
+  friendly_name: "Master Bedroom Seismic"
+  icon: mdi:thermometer
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_burglar_4:
+  friendly_name: "Guest Bedroom Motion"
+  icon: mdi:security
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_luminance_4:
+  friendly_name: "Guest Bedroom Luminance"
+  icon: mdi:brightness-7
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature_4:
+  friendly_name: "Guest Bedroom Temperature"
+  icon: mdi:thermometer
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_seismic_intensity_4:
+  friendly_name: "Guest Bedroom Seismic"
+  icon: mdi:thermometer
+sensor.slave_washingmachine_current_state:
+  friendly_name: "Tvättmaskin"
+  icon: mdi:washing-machine
+light.012005506001946245d8:
+  friendly_name: "Tripod Light"
+  icon: mdi:floor-lamp-variant
+light.0120055060019462458f:
+  friendly_name: "Rice Light"
+  icon: mdi:floor-lamp
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_battery_level:
+  friendly_name: Livingroom Fibaro Battery 
+  icon: mdi:battery
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_battery_level_2:
+  friendly_name: Kitchen Fibaro Battery
+  icon: mdi:battery
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_battery_level_3:
+  friendly_name: Master Fibaro Battery
+  icon: mdi:battery
+sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_battery_level_4:
+  friendly_name: Guest Fibaro Battery
+  icon: mdi:battery
+sensor.dosa:
+  friendly_name: IKEA dosa
+  icon: mdi:remote
+sensor.speedtest_download:
+  friendly_name: Download Rate
+sensor.speedtest_ping:
+  friendly_name: Last Ping
+sensor.speedtest_upload:
+  friendly_name: Upload Rate

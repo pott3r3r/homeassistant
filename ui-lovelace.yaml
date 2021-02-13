@@ -1,0 +1,10 @@
+title: Angelville
+resources: !include lovelace/resources.yaml
+cch: !include lovelace/cch.yaml
+views:
+  - !include lovelace/view-overview.yaml
+  - !include lovelace/view-floor-ground.yaml
+  - !include lovelace/view-floor-first.yaml
+  - !include lovelace/view-floor-basement.yaml
+  - !include lovelace/view-heating.yaml
+  - !include lovelace/view-pihole.yaml

@@ -1,0 +1,40 @@
+- name: Flygstaden Shopping Center
+  latitude: 56.679349
+  longitude: 12.808778
+  radius: 350
+  icon: mdi:shopping
+- name: Hallarna Shopping Center
+  latitude: 56.655706
+  longitude: 12.910162
+  radius: 75
+  icon: mdi:shopping
+- name: JULA
+  latitude: 56.660583
+  longitude: 12.908566
+  radius: 30
+  icon: mdi:store
+- name: RUSTA
+  latitude: 56.662022
+  longitude: 12.908008
+  radius: 30
+  icon: mdi:store
+- name: BILTEMA
+  latitude: 56.664604
+  longitude: 12.907622
+  radius: 50
+  icon: mdi:store
+- name: Halmstad Sjukhus
+  latitude: 56.681984
+  longitude: 12.847236
+  radius: 135
+  icon: mdi:hospital
+- name: Hemköp Haverdal
+  latitude: 56.730229
+  longitude: 12.670064
+  radius: 30
+  icon: mdi:store
+- name: Ratic Hallen
+  latitude: 56.744882
+  longitude: 12.735626
+  radius: 30
+  icon: mdi:table-tennis

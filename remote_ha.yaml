@@ -1,0 +1,14 @@
+instances:
+- host: !secret slave_ip
+  port: !secret slave_port
+  secure: false
+  verify_ssl: false
+  access_token: !secret access_token_slave
+  entity_prefix: "slave_"
+  subscribe_events:
+  - zwave.network_ready
+  - zwave.node_event
+  - zwave.scene_activated
+  - state_changed
+  - service_registered
+ 

@@ -1,0 +1,9 @@
+initial_state: 'on'
+alias: Lights off after sunrise
+trigger:
+  - platform: sun
+    event: sunrise
+    offset: '-00:30:00'
+action:
+  service: homeassistant.turn_off
+  entity_id: switch.slave_ac_1c43136_1

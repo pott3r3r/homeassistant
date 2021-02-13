@@ -1,0 +1,16 @@
+alias: 'Set washing machine as finished'
+trigger:
+- platform: numeric_state
+  entity_id: sensor.slave_telldus_tzwp_102_plug_in_switch_power
+  below: '10'
+  for:
+     minutes: 10
+condition:
+- condition: state
+  entity_id: input_select.washingmachine_status
+  state: "Running"
+action:
+- service: input_select.select_option
+  data:
+    entity_id: input_select.washingmachine_status
+    option: "Finished"

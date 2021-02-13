@@ -1,0 +1,5 @@
+name: Dryer Status
+options: 
+  - 'Powered Off'
+  - 'Running'
+  - 'Finished'

@@ -1,0 +1,14 @@
+alias: 'Notify Dryer machine finished'
+trigger:
+- platform: state
+  entity_id: input_select.dryer_status
+  to: "Finished"
+action:
+- service: telegram_bot.send_message
+  data:
+    title: 'Dryer Machine:'
+    message: "The Dryer program is finished. Please take out the laundry."
+- service: input_select.select_option
+  data:
+    entity_id: input_select.dryer_status
+    option: "Powered Off"

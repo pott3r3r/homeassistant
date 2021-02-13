@@ -1,0 +1,15 @@
+title: AirWaterHeating
+id: view-heating.yaml
+path: heating
+icon: mdi:home-thermometer
+cards:
+  - type: entities
+    entities:
+      - water_heater.quantum_slipstream
+      - sensor.quantum_slipstream_outside_temperature
+      - sensor.quantum_slipstream_tank_temperature
+      - sensor.quantum_slipstream_zone_1_flow_return_temperature
+      - sensor.quantum_slipstream_zone_1_flow_temperature
+      - sensor.quantum_slipstream_zone_1_room_temperature
+  - type: thermostat
+    entity: climate.quantum_slipstream_zone_1

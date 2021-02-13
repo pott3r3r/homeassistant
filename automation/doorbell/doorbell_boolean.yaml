@@ -1,0 +1,10 @@
+alias: Doorbell Front Door Trigger Boolean
+trigger:
+  - platform: event
+    event_type: button_pressed
+    event_data:
+      state: 'group on'
+      entity_id: binary_sensor.slave_ac_1c8fdea_1
+action:
+  - service: homeassistant.turn_on
+    entity_id: input_boolean.doorbell_ringing

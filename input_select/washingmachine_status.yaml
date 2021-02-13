@@ -1,0 +1,5 @@
+name: Washingmachine Status
+options: 
+  - 'Powered Off'
+  - 'Running'
+  - 'Finished'

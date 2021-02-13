@@ -1,0 +1,27 @@
+title: Basement floor
+id: ground-floor
+path: basement-floor
+icon: mdi:home-floor-b
+cards:
+- type: glance
+  title: Utilities 
+  columns: 2
+  entities:
+    - entity: sensor.washingmachine_current_state
+      name: Tvättmaskin
+    - entity: sensor.dryer_current_state
+      name: Torktumlare
+- type: history-graph
+  title: Humidity
+  hours_to_show: 24
+  entities:
+  - sensor.freezer_room_humidity
+  - sensor.laundery_room_humidity
+  - sensor.server_room_humidity
+- type: history-graph
+  title: Temperature
+  hours_to_show: 24
+  entities:
+  - sensor.freezer_room_temperature
+  - sensor.laundery_room_temperature
+  - sensor.server_room_temperature

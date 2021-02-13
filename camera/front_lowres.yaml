@@ -1,0 +1,7 @@
+platform: generic
+name: 'Front camera lowres'
+still_image_url: !secret reolink_camera_1_picture_url
+stream_source: !secret reolink_camera_1_video_url_small
+username: !secret camera_username
+password: !secret camera_password
+authentication: basic

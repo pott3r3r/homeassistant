@@ -1,0 +1,3 @@
+platform: local_file
+name: "Entrance camera from Doods"
+file_path: "/config/www/cameras/entrance_camera_snapshot_latest.jpg"

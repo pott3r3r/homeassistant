@@ -1,0 +1,34 @@
+title: First floor
+id: first-floor
+path: first-floor
+icon: mdi:numeric-1-box
+cards:
+- type: entities
+  title: Entertainment upstairs
+  show_header_toggle: false
+  entities:
+#    - entity: media_player.samsung_ue55ks8005
+#      name: Samsung main
+#      type: 'custom:mini-media-player'
+#      group: true
+#      icon: mdi:television
+#      power_color: true
+#    - entity: media_player.yamaha_receiver
+#      name: Yamaha AVR
+#      type: custom:mini-media-player
+#      group: true
+#      icon: mdi:surround-sound-5-1
+#      power_color: true
+    - entity: switch.slave_shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
+      name: Odroid
+      icon: mdi:android
+- type: light
+  entity: light.lightbulb2
+  name: Tripod
+
+- type: history-graph
+  title: Temperature
+  hours_to_show: 24
+  entities:
+    - sensor.tv_room_upstairs_temperature
+    - sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature_3

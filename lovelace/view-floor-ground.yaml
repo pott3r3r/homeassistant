@@ -1,0 +1,104 @@
+title: Ground floor
+id: ground-floor
+path: ground-floor
+icon: mdi:alpha-g-box
+cards:
+- type: light
+  entity: light.lightbulb1
+  name: Rice Lamp
+- type: glance
+  title: Living room
+  columns: 4
+  entities:
+    #- entity: switch.slave_shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_3
+    #  tap_action: 
+    #    action: toggle
+    #- entity: switch.slave_shenzhen_neo_electronics_co_ltd_power_plug_12a_switch
+    #  tap_action: 
+    #    action: toggle
+    #- entity: switch.slave_rislampa
+    #  name: "Rislampa"
+    #  tap_action:
+    #    action: toggle
+    # - entity: light.living_room_table
+    #   name: "Table"
+    # - entity: switch.slave_livingroom_socket_switch
+    #   name: "Socket"
+    #   tap_action: 
+    #     action: toggle 
+    # - entity: binary_sensor.slave_patio_window_left
+    #   name: "Left"
+    # - entity: binary_sensor.slave_patio_door_left_sensor
+    #   name: "Patio door"
+    # - entity: binary_sensor.slave_patio_window_right
+    #   name: "Right"
+    #- entity: light.tradfri_bulb_e27_ws_opal_980lm_2
+    #  name: "Dining"
+    #- entity: binary_sensor.slave_living_room_motion
+    #  name: "Motion"
+    - entity: sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature
+      name: "Temperature"
+    - entity: sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_luminance
+      name: "Light level"
+    # - entity: media_player.samsung_tv_remote
+    #   name: TV
+    # - entity: media_player.cast_living_room_tv
+    #   name: Chromecast
+    # - entity: media_player.living_room_smart_displa
+    #   name: "Home Hub"
+    # - entity: media_player.living_room
+    #   name: "Sonos"
+#- type: glance
+#  title: Hall
+#  columns: 4
+#  entities:
+#    - entity: light.hall
+#      name: Hall light
+#    - entity: switch.slave_hall_downstairs_switch
+#      name: Hall socket
+#      tap_action: 
+#        action: toggle
+#    - entity: binary_sensor.slave_hall_downstairs_occupancy
+#      name: Motion
+#    - entity: sensor.slave_hall_downstairs_illuminance
+#      name: "Light level"
+#- type: glance
+#  title: Vestibule
+#  columns: 3
+#  entities:
+#    - entity: binary_sensor.slave_front_door_sensor
+#      name: Front door
+#    - entity: binary_sensor.slave_vestibule_window_front
+#      name: Front
+#    - entity: binary_sensor.slave_vestibule_window_side
+#      name: Side
+#    - entity: binary_sensor.slave_vestibule_occupancy
+#      name: Motion
+#    - entity: sensor.slave_vestibule_illuminance
+#      name: "Light level"
+#    - entity: switch.slave_vestibule_socket_switch
+#      name: Socket
+#      tap_action: 
+#        action: toggle
+- type: history-graph
+  title: Light level
+  hours_to_show: 12
+  entities:
+    - entity: sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_luminance
+      name: Living room
+    - entity: sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_luminance_2
+      name: Kitchen
+    - entity: sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_luminance_4
+      name: Guest bedroom
+- type: history-graph
+  title: Temperature
+  hours_to_show: 12
+  entities:
+    - entity: sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature
+      name: Living room
+    - entity: sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature_2
+      name: Kitchen
+    - entity: sensor.slave_fibaro_system_fgms001_zw5_motion_sensor_temperature_4
+      name: Guest bedroom
+    - entity: sensor.dark_sky_temperature
+      name: Outside

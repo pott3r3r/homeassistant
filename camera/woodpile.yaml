@@ -1,0 +1,6 @@
+platform: generic
+name: Woodpile
+still_image_url: !secret woodpile_picture_url 
+stream_source: !secret woodpile_video_url
+scan_interval: 20
+verify_ssl: false

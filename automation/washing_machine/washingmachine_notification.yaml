@@ -1,0 +1,14 @@
+alias: 'Notify Washing machine finished'
+trigger:
+- platform: state
+  entity_id: input_select.washingmachine_status
+  to: "Finished"
+action:
+- service: telegram_bot.send_message
+  data:
+    title: 'Washing Machine:'
+    message: "The washing program is finished. Please take out the laundry."
+- service: input_select.select_option
+  data:
+    entity_id: input_select.washingmachine_status
+    option: "Powered Off"

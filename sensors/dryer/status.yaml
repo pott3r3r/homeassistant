@@ -1,0 +1,18 @@
+- platform: template
+  sensors:
+    dryer_amps:
+      value_template: "{{ states('sensor.slave_telldus_tzwp_102_plug_in_switch_current_2') }}"
+      unit_of_measurement: 'A'
+      friendly_name: 'Dryer ampère'
+    dryer_volts:
+      value_template: "{{ states('sensor.slave_telldus_tzwp_102_plug_in_switch_voltage_2') }}"
+      unit_of_measurement: 'V'
+      friendly_name: 'Dryer voltage'
+    dryer_watts:
+      value_template: "{{ states('sensor.slave_washing_machine_power_2') }}"
+      unit_of_measurement: 'W'
+      friendly_name: 'Dryer current consumption'
+    dryer_total_kw:
+      value_template: "{{ states('sensor.slave_telldus_tzwp_102_plug_in_switch_energy_2') }}"
+      unit_of_measurement: 'kWh'
+      friendly_name: 'Dryer total consumption'

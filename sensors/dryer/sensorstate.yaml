@@ -1,0 +1,5 @@
+- platform: template
+  sensors:
+    dryer_current_state:
+      value_template: "{{ states('input_select.dryer_status') }}"
+      friendly_name: 'Dryer State'

@@ -1,0 +1,6 @@
+- platform: template
+  sensors:
+    current_humidity:
+      friendly_name: Current humidity
+      value_template: "{{ state_attr('weather.dark_sky','humidity') }}"
+      unit_of_measurement: "%"

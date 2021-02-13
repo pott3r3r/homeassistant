@@ -1,0 +1,6 @@
+- platform: template
+  sensors:
+    current_temperature:
+      friendly_name: Current temperature
+      value_template: "{{ state_attr('weather.dark_sky','temperature') }}"
+      unit_of_measurement: "°C"

@@ -1,0 +1,12 @@
+alias: Doorbell Front Door Ring
+trigger:
+  - platform: state
+    entity_id: input_boolean.doorbell_ringing
+    to: 'on'
+action:
+  - service: telegram_bot.send_message
+    data:
+      title: 'Doorbell ringing!'
+      message: 'Someone is at the front door'
+  - service: homeassistant.turn_off
+    entity_id: input_boolean.doorbell_ringing

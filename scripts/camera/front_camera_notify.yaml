@@ -148,9 +148,9 @@ sequence:
         {%- endif -%}
       target: >- 
         {% if (states('input_number.front_camera_interesting_things')|int) > 0 %}
-           !secret discord_camera_channel
+           !secret telegram_one
         {% else %}
-           !secret discord_camera_false_channel
+           !secret telegram_one
         {% endif %}
       data:
         images:

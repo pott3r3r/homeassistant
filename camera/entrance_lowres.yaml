@@ -1,7 +1,0 @@
-platform: generic
-name: 'Entrance camera lowres'
-still_image_url: !secret reolink_camera_4_picture_url
-stream_source: !secret reolink_camera_4_video_url_small
-username: !secret camera_username
-password: !secret camera_password
-authentication: basic

@@ -1,3 +1,0 @@
-platform: local_file
-name: "Entrance camera snapshot"
-file_path: "/config/www/cameras/entrance_camera_snapshot.jpg"

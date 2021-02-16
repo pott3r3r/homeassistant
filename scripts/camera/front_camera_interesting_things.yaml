@@ -5,11 +5,11 @@ sequence:
       entity_id: input_number.front_camera_interesting_things
       value: >-
         {#- Set the scene - extract the things we care about, and prepare some defaults -#}
-        {%- set totalPeople = state_attr('image_processing.doods_front_camera_snapshot','summary').person|default(0) -%}
-        {%- set totalCars = state_attr('image_processing.doods_front_camera_snapshot','summary').car|default(0) -%}
-        {%- set totalTrucks = state_attr('image_processing.doods_front_camera_snapshot','summary').truck|default(0) -%}
-        {%- set totalMotorcycles = state_attr('image_processing.doods_front_camera_snapshot','summary').motorcycle|default(0) -%}
-        {%- set totalBicycles = state_attr('image_processing.doods_front_camera_snapshot','summary').bicycle|default(0) -%}
+        {%- set totalPeople = state_attr('image_processing.doods_front_camera','summary').person|default(0) -%}
+        {%- set totalCars = state_attr('image_processing.doods_front_camera','summary').car|default(0) -%}
+        {%- set totalTrucks = state_attr('image_processing.doods_front_camera','summary').truck|default(0) -%}
+        {%- set totalMotorcycles = state_attr('image_processing.doods_front_camera','summary').motorcycle|default(0) -%}
+        {%- set totalBicycles = state_attr('image_processing.doods_front_camera','summary').bicycle|default(0) -%}
         {%- set parkedCars = 0 -%}
         {%- set otherCars = 0 -%}
         {%- set parkedTrucks = 0 -%}
@@ -25,18 +25,18 @@ sequence:
         {#- Split out parked cars from the rest - don't care about the parked ones -#}
         {%- if totalCars > 0 -%}
           {%- macro getParkedCars() -%}
-          {%- for state in state_attr('image_processing.doods_front_camera_snapshot','matches').car -%}{{- "X" if isParked(state.box) -}}{%- endfor -%}
+          {%- for state in state_attr('image_processing.doods_front_camera','matches').car -%}{{- "X" if isParked(state.box) -}}{%- endfor -%}
           {%- endmacro -%}
           {%- set parkedCars = getParkedCars()|length -%}
-          {%- set otherCars = state_attr('image_processing.doods_front_camera_snapshot','summary').car - parkedCars -%}
+          {%- set otherCars = state_attr('image_processing.doods_front_camera','summary').car - parkedCars -%}
         {%- endif -%}
   
         {%- if totalTrucks > 0 -%}
           {%- macro getParkedTrucks() -%}
-          {%- for state in state_attr('image_processing.doods_front_camera_snapshot','matches').truck -%}{{- "X" if isParked(state.box) -}}{%- endfor -%}
+          {%- for state in state_attr('image_processing.doods_front_camera','matches').truck -%}{{- "X" if isParked(state.box) -}}{%- endfor -%}
           {%- endmacro -%}
           {%- set parkedTrucks = getParkedTrucks()|length -%}
-          {%- set otherTrucks = state_attr('image_processing.doods_front_camera_snapshot','summary').truck - parkedTrucks -%}
+          {%- set otherTrucks = state_attr('image_processing.doods_front_camera','summary').truck - parkedTrucks -%}
         {%- endif -%}
   
         {%- set parkedVehicles = parkedCars+parkedTrucks -%}
@@ -50,10 +50,10 @@ sequence:
             ) else X -}}
           {%- endmacro -%}
           {%- macro getPeopleOnPath() -%}
-          {%- for state in state_attr('image_processing.doods_front_camera_snapshot','matches').person -%}{{- "X" if personOnPath(state.box) -}}{%- endfor -%}
+          {%- for state in state_attr('image_processing.doods_front_camera','matches').person -%}{{- "X" if personOnPath(state.box) -}}{%- endfor -%}
           {%- endmacro -%}
           {%- set relevantPeople = getPeopleOnPath()|length -%}
-          {%- set otherPeople = state_attr('image_processing.doods_front_camera_snapshot','summary').person - relevantPeople -%}
+          {%- set otherPeople = state_attr('image_processing.doods_front_camera','summary').person - relevantPeople -%}
         {%- endif -%}
   
         {#- total up the things into different categories -#}

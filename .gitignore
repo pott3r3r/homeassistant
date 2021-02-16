@@ -14,7 +14,6 @@
 !binary_sensors/*
 !blueprints/*
 !camera/*
-!custom_components/*
 !deps/*
 !device_tracker/*
 !esphome/*
@@ -41,6 +40,7 @@
 secrets.yaml
 
 # Ignore these files/folders
+custom_components/
 .storage
 .cloud
 .google.token 
